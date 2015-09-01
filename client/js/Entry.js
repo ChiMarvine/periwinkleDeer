@@ -83,8 +83,6 @@ var Entry = React.createClass({
    },
 
    handleSubmit: function(link){
-      console.log(link);
-      this.context.router.transitionTo('/' + link);
       var store = {
          restaurant : this.state.restaurant.name,
          address    : this.state.restaurant.formatted_address,
@@ -104,6 +102,8 @@ console.log(store);
            data: store,
            success: function(data) {
                console.log("success!!! This is the data ==== ", data);
+               console.log(data);
+               this.context.router.transitionTo('/' + link);
            }.bind(this),
            error: function(xhr, status, err) {
                console.log(xhr, status, err);
