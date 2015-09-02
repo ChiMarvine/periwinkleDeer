@@ -165,7 +165,7 @@ console.log(store);
 
              <div className="form-group">
                  <label>Upload Picture</label>
-                 <input style={style} ref="upload" type="file" accept="image/*" onSubmit={this.handleSubmit} onChange={ this.onChange }/>
+                 <input style={style} ref="upload" type="file" accept="image/*" onSubmit={this.handleSubmit} onChange={this.onChange}/>
                  <p className="help-block">{ image }</p>
              </div>           
 
@@ -174,7 +174,7 @@ console.log(store);
                <select id="category" className="form-control">
                  <option>Snack</option>
                  <option>Grub</option>
-                 <option>Dessert</option>
+                 <option>Sweets</option>
                </select>
              </div>
 
